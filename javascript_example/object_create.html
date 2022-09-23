@@ -1,0 +1,16 @@
+<script>
+    var array = [1, 2, 3, 4, 5];
+    for(var item of array) {
+        console.log(item);
+    }
+    var product = {
+        제품명: '7D 건조 망고',
+        유형: '당절임',
+        print: function() {
+            for(var key in this) {
+                console.log(key, ':', this[key]);
+            }
+        }
+    };
+    product.print();
+</script>
