@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>카드 만들기</title>
+    <style>
+        /* box 설정 */
+
+        label {
+                display: inline-block;
+                width: 5.0em;
+                text-align: center;
+                
+            }
+
+        .box {
+            border-width: thin;
+            width: 280px;
+            text-align: center;
+            padding: 7px 40px;
+            /* 박스 위 아래 너비 설정 */
+            background-color: burlywood;
+            border-radius: 3px 3px 3px 3px;
+            /* 박스 모서리를 둥글게 */
+            margin-bottom: 1 px;
+            margin-top: 1 px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.00), 0 5px 6px rgba(0, 0, 0, 0.20);
+            /* 박스 그림자 설정 */
+            display: grid;
+            /* box를 한칸으로 묶기위해 설정 */
+            display: inline-block;
+            }  
+        .container {
+                width: 400px;
+                text-align: left;
+            }
+
+        /* img 의 위치를 조정하기 위한 class */
+        .center {
+            display: inline-block;
+            margin: 0px auto;
+        }
+        .a {
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+    <!-- Card 안 이미지 생성 Script code11-6에서 긁어옴 -->
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('img').attr({
+                src: 'http://place-hold.it/150x150',
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h2>회원가입</h2>
+        <img class="center">
+        <p>
+            <style>
+
+            </style>
+            </head>
+
+            <body>
+                <div class="container">
+                    <div class="font"><label class="a">이메일</label><input type="email" name="email"></div>
+                    <div class="font"><label class="a">암호</label><input type="password" name="password"></div>
+                    <div class="font"><label class="a">암호확인</label><input type="password" name="password"></div>
+                    
+                </div>
+                <input class="a" type="submit" name="submit" style="width: 100px;">
+        </p>
+    </div>
+</body>
+
+</html>
