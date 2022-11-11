@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>프로필</title>
+    <style>
+      /* profile.html 복사하고 style만 지우기 */
+      #container {
+        width: 320px;
+        margin: auto;
+        height: 100vh;
+        border: 1px solid darkgreen;
+      }
+      #profile {
+        background: darkgreen; /* 0~9 a~f */
+        display: flex;
+        align-items: center; /* 수직 정렬 */
+        justify-content: space-between; /* 수평 정렬 */
+        padding: 20px;
+        text-align: center;
+      }
+      .left {
+
+      }
+      .textbox {
+
+      }
+      .label {
+        display: block;
+      }
+      #gallery {
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        justify-content: space-between;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <div class="left">
+          <img src="http://place-hold.it/60x60"/>
+        </div>
+        <div class="left textbox">1111<span class="label">게시물</span></div>
+        <div class="left textbox">2222<span class="label">팔로워</span></div>
+        <div class="left textbox">3333<span class="label">팔로잉</span></div>
+      </div> <!-- css로 높이 설정 -->
+      <div id="gallery">
+        <img src="http://place-hold.it/80x80"/>
+        <img src="http://place-hold.it/80x80"/>
+        <img src="http://place-hold.it/80x80"/>
+        <img src="http://place-hold.it/80x80"/>
+        <img src="http://place-hold.it/80x80"/>
+        <img src="http://place-hold.it/80x80"/>
+      </div>
+    </div>
+  </body>
+</html>
