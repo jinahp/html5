@@ -1,0 +1,49 @@
+<script src="https://unpkg.com/lodash"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const divs = document.querySelectorAll('body > div');
+
+    divs.forEach((div) => {
+      // const rgb = new Array(3).fill().map(() => )
+      let rgb = [_.random(0, 255), _.random(0, 255), _.random(0, 255)];
+      rgb = rgb.join();
+      div.style.height = `10px`;
+      div.style.backgroundColor = `rgba(${rgb})`;
+    });
+  });
+</script>
+
+<body>
+   
+  <!-- div 태그 25개 -->
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+    <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
