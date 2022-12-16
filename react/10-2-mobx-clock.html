@@ -1,0 +1,24 @@
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/mobx@6.7.0/dist/mobx.umd.development.js"></script>
+<script src="https://unpkg.com/mobx-react-lite@3.4.0/dist/mobxreactlite.umd.development.js"></script>
+<script type="text/babel">
+  // 애플리케이션 상태를 모델링합니다.
+  class Timer {
+    date = new Date();
+
+    update = () => this.date = new Date();
+  }
+
+  const myTimer = new Timer();
+  mobx.makeAutoObservable(myTimer);
+
+  // observable state를 사용하는 사용자 인터페이스를 구축합니다.
+  const TimerView = mobxReactlite.observer(({ timer }) => ( 
+    <div>{timer.date.toLocaleTimeString()}</div>
+  ));
+
+  ReactDOM.render(<TimerView timer={myTimer} />, document.body);
+
+  setInterval(myTimer.update, 1000);
+</script>
