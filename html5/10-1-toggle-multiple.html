@@ -1,0 +1,26 @@
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/styled-components@4/dist/styled-components.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+function App(props) {
+    const [checkedIndex, setChecked] = React.useState(0);
+
+    const toggles = props.labels.map((label, index) => {
+        const handleClick = () => {
+            setChecked(index);
+        };
+        //let checked;
+        // if (checkedIndex === index) {
+        // checked = true;
+        // } else {
+        //     checked = false;
+        // }
+        // checked={checked}
+        return <Toggle checked={checkedIndex === index} onClick={handleClick}>
+            {label}
+            </Toggle>
+    });
+    return <div>{toggle}</div>
+}
+</script>
